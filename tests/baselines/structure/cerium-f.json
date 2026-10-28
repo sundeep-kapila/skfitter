@@ -1,0 +1,82 @@
+{
+ "about": "skfitter_structure reference, see tests/make_structure_baselines.py",
+ "formula": "Ce",
+ "spacegroup": {
+  "symbol": "Fm-3m",
+  "number": 225,
+  "crystal_system": "cubic"
+ },
+ "n_sites": 1,
+ "n_inequivalent": 1,
+ "dimensionality": "3D",
+ "abc": [
+  3.64942,
+  3.64942,
+  3.64942
+ ],
+ "angles": [
+  60.0,
+  60.0,
+  60.0
+ ],
+ "volume": 34.3683,
+ "n_neighbors": 2,
+ "n_shells": 2,
+ "cutoff": 5.261,
+ "d0": 3.649424298602064,
+ "shells": [
+  3.649,
+  5.161,
+  6.321,
+  7.299,
+  8.16
+ ],
+ "pair_shells": {
+  "Ce-Ce": [
+   3.6494,
+   5.1611
+  ]
+ },
+ "n_pairs": 18,
+ "n_bonds": 9,
+ "hopping_keys": [
+  "v_Ce_d-Ce_d_ddd",
+  "v_Ce_d-Ce_d_ddp",
+  "v_Ce_d-Ce_d_dds",
+  "v_Ce_d-Ce_f_dfd",
+  "v_Ce_d-Ce_f_dfp",
+  "v_Ce_d-Ce_f_dfs",
+  "v_Ce_f-Ce_f_ffd",
+  "v_Ce_f-Ce_f_fff",
+  "v_Ce_f-Ce_f_ffp",
+  "v_Ce_f-Ce_f_ffs",
+  "v_Ce_s-Ce_d_sds",
+  "v_Ce_s-Ce_f_sfs",
+  "v_Ce_s-Ce_s_sss"
+ ],
+ "sites": [
+  {
+   "label": "Ce1",
+   "eq": 0,
+   "shells": [
+    [
+     1,
+     3.649,
+     12,
+     {
+      "Ce": 12
+     }
+    ],
+    [
+     2,
+     5.161,
+     6,
+     {
+      "Ce": 6
+     }
+    ]
+   ]
+  }
+ ],
+ "warnings": 0
+}

@@ -1,0 +1,32 @@
+# CeO2, Ce d (t2g, eg) f (a2u, t1u, t2u) and O p
+# The model of the SKFitter paper (Table 1). The fit starts from the published parameters
+# (reference/); skfitter fit gives the RMSE of the paper. See README.md for a fit from scratch.
+
+name = "ceria"
+output = "out"
+
+[dft]
+code = "espresso"
+xml = "data/qe_bands.xml"
+bands_in = "data/qe_bands.in"
+scf = "data/qe_scf.out"
+projwfc = "data/qe_projwfc_up.gz"
+
+[model]
+orbitals = { Ce = ["d_t2g", "d_eg", "f_a2u", "f_t1u", "f_t2u"], O = ["p"] }
+bands_below = 6
+bands_above = 7
+neighbours = 4
+hopping = "shell"
+soc = false
+overlap = false
+fit_eta = true
+
+[fit]
+method = "ls"
+starts = 2
+seed = 0
+refine_max_nfev = 300
+fermi_weight = 30
+fermi_window = 1
+start_from = "reference/ceria_fit.json"

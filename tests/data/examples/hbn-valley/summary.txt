@@ -1,0 +1,5 @@
+highest occupied level (SCF)       : -4.0490 eV
+k-points on the path               : 129   (occupied bands: 4)
+band gap along the path            : 4.6748 eV   (VBM at point 41, CBM at point 1)
+gap at K (point 41)                : 4.6964 eV   bands near E_F (eV): -11.221560  -4.049054  0.647305  8.354481
+gap at K' (point 89)               : 4.6964 eV   bands near E_F (eV): -11.221560  -4.049054  0.647305  8.354481

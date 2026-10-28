@@ -1,0 +1,42 @@
+{
+ "id": "hbn-valley",
+ "name": "hBN-Valley",
+ "material": "Hexagonal boron nitride (BN) - 2D monolayer",
+ "code": "espresso",
+ "files": {
+  "qe_xml": "qe_bands.xml",
+  "qe_bands_in": "qe_bands.in",
+  "qe_scf": "qe_scf.out",
+  "qe_projwfc": "qe_projwfc_up"
+ },
+ "seed": "hbn",
+ "cfg": {
+  "orbital_config": {
+   "B": [
+    "pz"
+   ],
+   "N": [
+    "pz"
+   ]
+  },
+  "magnetic_orbitals": {},
+  "n_bands_below": 1,
+  "n_bands_above": 1,
+  "n_neighbors": 3,
+  "symprec": 0.001,
+  "fit_eta": true,
+  "fixed_eta": 2.5,
+  "include_soc": false,
+  "non_orthogonal": true,
+  "model_states_only": true,
+  "tb_nelect": null
+ },
+ "opts": {
+  "method": "ls",
+  "n_starts": 8,
+  "refine_max_nfev": 300,
+  "seed": 0
+ },
+ "start_set": "harrison",
+ "order": 3
+}

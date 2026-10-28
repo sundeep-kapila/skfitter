@@ -1,0 +1,36 @@
+# bcc Fe, s p d (t2g, eg), ferromagnetic with spin-orbit coupling: per shell, whole orbital families
+# skfitter fit steps/shell.toml (from the example folder)
+
+name = "iron_shell"
+output = "../out"
+
+[dft]
+code = "espresso"
+xml = "../data/qe_bands.xml"
+bands_in = "../data/qe_bands.in"
+scf = "../data/qe_scf.out"
+projwfc = "../data/qe_projwfc_up.gz"
+
+[model]
+orbitals = { Fe = ["s", "p", "d"] }
+magnetic_orbitals = { Fe = ["s", "d"] }
+bands_below = 4
+bands_above = 1
+neighbours = 4
+hopping = "shell"
+soc = true
+overlap = false
+fit_eta = true
+
+[fit]
+method = "ls"
+starts = 8
+seed = 0
+refine_max_nfev = 300
+fermi_weight = 30
+fermi_window = 1
+start_from = "../out/iron_decay_fit.json"
+
+[fit.fix]
+lambda_Fe_d = 0.057
+lambda_Fe_p = 0

@@ -1,0 +1,6 @@
+# the same run without the field (EFIELD_V_PER_A=0): the reference for the Rashba splitting
+Fermi energy (SCF)                 : -2.3441 eV
+k-points on the path               : 113   (occupied bands: 8, spinor)
+band gap along the path            : 7.6 micro-eV   (VBM at point 65, CBM at point 65)
+gap at K (point 65)                : 7.6 micro-eV   bands near E_F (eV): -2.353721  -2.353720  -2.353712  -2.353711
+sigma (px, py) splitting at Gamma  : 9.84 meV   (the atomic spin-orbit coupling of carbon: about 9 meV)

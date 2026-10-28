@@ -1,0 +1,51 @@
+{
+ "id": "graphene-on-hbn",
+ "name": "Graphene-on-hBN",
+ "material": "Graphene on hBN (BC₂N) - 2D bilayer",
+ "code": "espresso",
+ "files": {
+  "qe_xml": "qe_bands.xml",
+  "qe_bands_in": "qe_bands.in",
+  "qe_scf": "qe_scf.out",
+  "qe_projwfc": "qe_projwfc_up"
+ },
+ "seed": "graphene_hbn",
+ "cfg": {
+  "orbital_config": {
+   "B": [
+    "pz"
+   ],
+   "N": [
+    "pz"
+   ],
+   "C": [
+    "pz"
+   ]
+  },
+  "magnetic_orbitals": {},
+  "n_bands_below": 2,
+  "n_bands_above": 2,
+  "n_neighbors": 3,
+  "symprec": 0.001,
+  "fit_eta": true,
+  "fixed_eta": 2.5,
+  "include_soc": false,
+  "non_orthogonal": true,
+  "model_states_only": true,
+  "tb_nelect": null
+ },
+ "opts": {
+  "method": "ls",
+  "n_starts": 8,
+  "refine_max_nfev": 300,
+  "seed": 0,
+  "add_weight_at_fermi_bands": true,
+  "fermi_weight": 10.0,
+  "fermi_window": 1.0,
+  "add_weight_at_symmetry_points": true,
+  "symmetry_weight": 10.0,
+  "symmetry_width": 2
+ },
+ "start_set": "harrison",
+ "order": 4
+}

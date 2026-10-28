@@ -1,0 +1,5 @@
+Fermi energy (SCF)                 : -2.1972 eV
+k-points on the path               : 113   (occupied bands: 8, spinor)
+band gap along the path            : 2.7 micro-eV   (VBM at point 65, CBM at point 65)
+gap at K (point 65)                : 2.7 micro-eV   bands near E_F (eV): -2.206759  -2.206726  -2.206723  -2.206693
+sigma (px, py) splitting at Gamma  : 9.84 meV   (the atomic spin-orbit coupling of carbon: about 9 meV)

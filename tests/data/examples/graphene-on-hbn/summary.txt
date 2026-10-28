@@ -1,0 +1,5 @@
+Fermi energy (SCF)                 : -1.2465 eV
+k-points on the path               : 129   (occupied bands: 8)
+band gap along the path            : 32.20 meV   (VBM at point 89, CBM at point 41)
+gap at K (point 41)                : 32.20 meV   bands near E_F (eV): -2.617910  -1.264423  -1.232221  2.205266
+gap at K' (point 89)               : 32.20 meV   bands near E_F (eV): -2.617910  -1.264423  -1.232221  2.205266

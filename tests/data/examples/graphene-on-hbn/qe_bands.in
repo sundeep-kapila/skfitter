@@ -1,0 +1,41 @@
+&CONTROL
+  calculation = 'bands'
+  prefix = 'graphene_hbn'
+  outdir = './tmp'
+  pseudo_dir = '/home/sundeep/qe_2d/pseudo'
+  verbosity = 'high'
+/
+&SYSTEM
+  ibrav = 4
+  a = 2.48
+  c = 23.35
+  nat = 4
+  ntyp = 3
+  ecutwfc = 60
+  ecutrho = 480
+  nbnd = 16
+  occupations = 'smearing'
+  smearing = 'mv'
+  degauss = 0.002
+/
+&ELECTRONS
+  conv_thr = 1.0d-13
+  mixing_beta = 0.3
+  diago_full_acc = .true.
+/
+ATOMIC_SPECIES
+  B 10.811 B.pbe-n-kjpaw_psl.1.0.0.UPF
+  N 14.007 N.pbe-n-kjpaw_psl.1.0.0.UPF
+  C 12.011 C.pbe-n-kjpaw_psl.1.0.0.UPF
+ATOMIC_POSITIONS crystal
+  B 0.333333333333 0.666666666667 0.000000000000
+  N 0.666666666667 0.333333333333 0.000000000000
+  C 0.333333333333 0.666666666667 0.143468950749
+  C 0.000000000000 0.000000000000 0.143468950749
+K_POINTS crystal_b
+5
+  0.000000000000  0.000000000000 0.0 40 ! G
+  0.333333333333  0.333333333333 0.0 24 ! K
+  0.500000000000  0.000000000000 0.0 24 ! M
+  0.666666666667 -0.333333333333 0.0 40 ! K'
+  0.000000000000  0.000000000000 0.0  1 ! G

@@ -1,0 +1,47 @@
+&CONTROL
+  calculation = 'bands'
+  prefix = 'qe'
+  outdir = './qe_scratch'
+  pseudo_dir = './qe_pseudo'
+  verbosity = 'high'
+/
+&SYSTEM
+  ibrav = 0
+  nat = 4
+  ntyp = 3
+  nspin = 2
+  starting_magnetization(1) = 0.8
+  starting_magnetization(2) = -0.8
+  ecutwfc = 90
+  ecutrho = 360
+  nbnd = 48
+  occupations = 'smearing'
+  smearing = 'mv'
+  degauss = 0.01
+/
+&ELECTRONS
+  conv_thr = 1.0d-8
+  mixing_beta = 0.3
+/
+ATOMIC_SPECIES
+  Mn1 54.938 Mn.dojo04-pbe-sr.upf
+  Mn2 54.938 Mn.dojo04-pbe-sr.upf
+  Te 127.6 Te.dojo04-pbe-sr.upf
+CELL_PARAMETERS angstrom
+  4.217735960000 0.000000000000 0.000000000000
+  -2.108867980000 3.652645410000 0.000000000000
+  0.000000000000 0.000000000000 6.763033120000
+ATOMIC_POSITIONS crystal
+  Mn1 0.000000000000 0.000000000000 0.000000000000
+  Mn2 0.000000000000 0.000000000000 0.500000000000
+  Te 0.333333333333 0.666666666667 0.250000000000
+  Te 0.666666666667 0.333333333333 0.750000000000
+HUBBARD {ortho-atomic}
+  U Mn1-3d 4.0
+  U Mn2-3d 4.0
+K_POINTS crystal_b
+4
+  0.000000000000 0.000000000000 0.300000000000 40 ! G'
+  0.333333333333 0.333333333333 0.300000000000 40 ! K'
+  0.000000000000 0.000000000000 0.300000000000 40 ! G'
+  0.500000000000 0.000000000000 0.300000000000 1 ! M'

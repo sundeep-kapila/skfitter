@@ -1,0 +1,43 @@
+{
+ "id": "ceria-f",
+ "name": "Ceria-f",
+ "material": "Cerium dioxide (CeO₂) - fluorite",
+ "code": "espresso",
+ "files": {
+  "qe_xml": "qe_bands.xml",
+  "qe_bands_in": "qe_bands.in",
+  "qe_scf": "qe_scf.out",
+  "qe_projwfc": "qe_projwfc_up"
+ },
+ "seed": "ceo2",
+ "cfg": {
+  "orbital_config": {
+   "Ce": [
+    "d",
+    "f"
+   ],
+   "O": [
+    "p"
+   ]
+  },
+  "magnetic_orbitals": {},
+  "n_bands_below": 6,
+  "n_bands_above": 7,
+  "n_neighbors": 3,
+  "symprec": 0.001,
+  "fit_eta": false,
+  "fixed_eta": 2.5,
+  "include_soc": false,
+  "non_orthogonal": false,
+  "model_states_only": false,
+  "tb_nelect": null
+ },
+ "opts": {
+  "method": "ls",
+  "n_starts": 8,
+  "refine_max_nfev": 300,
+  "seed": 0
+ },
+ "start_set": "default",
+ "order": 8
+}

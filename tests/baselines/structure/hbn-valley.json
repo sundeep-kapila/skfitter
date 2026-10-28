@@ -1,0 +1,117 @@
+{
+ "about": "skfitter_structure reference, see tests/make_structure_baselines.py",
+ "formula": "BN",
+ "spacegroup": {
+  "symbol": "P-6m2",
+  "number": 187,
+  "crystal_system": "hexagonal"
+ },
+ "n_sites": 2,
+ "n_inequivalent": 2,
+ "dimensionality": "2D",
+ "abc": [
+  2.504,
+  2.504,
+  20.0
+ ],
+ "angles": [
+  90.0,
+  90.0,
+  120.0
+ ],
+ "volume": 108.5999,
+ "n_neighbors": 3,
+ "n_shells": 3,
+ "cutoff": 2.991,
+ "d0": 1.4456850740494025,
+ "shells": [
+  1.446,
+  2.504,
+  2.891,
+  3.825,
+  4.337,
+  5.008
+ ],
+ "pair_shells": {
+  "B-B": [
+   2.504
+  ],
+  "B-N": [
+   1.4457,
+   2.8914
+  ],
+  "N-N": [
+   2.504
+  ]
+ },
+ "n_pairs": 24,
+ "n_bonds": 12,
+ "hopping_keys": [
+  "v_B_pz-B_pz_ppp",
+  "v_B_pz-N_pz_ppp",
+  "v_N_pz-N_pz_ppp"
+ ],
+ "sites": [
+  {
+   "label": "B1",
+   "eq": 0,
+   "shells": [
+    [
+     1,
+     1.446,
+     3,
+     {
+      "N": 3
+     }
+    ],
+    [
+     2,
+     2.504,
+     6,
+     {
+      "B": 6
+     }
+    ],
+    [
+     3,
+     2.891,
+     3,
+     {
+      "N": 3
+     }
+    ]
+   ]
+  },
+  {
+   "label": "N1",
+   "eq": 1,
+   "shells": [
+    [
+     1,
+     1.446,
+     3,
+     {
+      "B": 3
+     }
+    ],
+    [
+     2,
+     2.504,
+     6,
+     {
+      "N": 6
+     }
+    ],
+    [
+     3,
+     2.891,
+     3,
+     {
+      "B": 3
+     }
+    ]
+   ]
+  }
+ ],
+ "warnings": 0
+}

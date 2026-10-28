@@ -1,0 +1,40 @@
+# fcc Pt, s p d with spin-orbit coupling
+# The model of the SKFitter paper (Table 1). The fit starts from the published parameters
+# (reference/); skfitter fit gives the RMSE of the paper. See README.md for a fit from scratch.
+
+name = "platinum"
+output = "out"
+
+[dft]
+code = "espresso"
+xml = "data/qe_bands.xml"
+bands_in = "data/qe_bands.in"
+scf = "data/qe_scf.out"
+projwfc = "data/qe_projwfc_up.gz"
+
+[model]
+orbitals = { Pt = ["s", "p", "d"] }
+bands_below = 5
+bands_above = 0
+neighbours = 4
+hopping = "shell"
+soc = true
+overlap = false
+fit_eta = true
+
+[fit]
+method = "ls"
+starts = 2
+seed = 0
+refine_max_nfev = 300
+fermi_weight = 10
+fermi_window = 1
+start_from = "reference/platinum_fit.json"
+
+# spin Hall conductivity sigma^z_xy of the fitted model (Fig. 3c)
+[[property]]
+type = "shc"
+nk = [80, 80, 80]
+emin = -10.0
+emax = 4.0
+num_efermi = 281

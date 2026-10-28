@@ -1,0 +1,183 @@
+{
+ "about": "skfitter_structure reference, see tests/make_structure_baselines.py",
+ "formula": "BC2N",
+ "spacegroup": {
+  "symbol": "P3m1",
+  "number": 156,
+  "crystal_system": "trigonal"
+ },
+ "n_sites": 4,
+ "n_inequivalent": 4,
+ "dimensionality": "2D",
+ "abc": [
+  2.48,
+  2.48,
+  23.35
+ ],
+ "angles": [
+  90.0,
+  90.0,
+  120.0
+ ],
+ "volume": 124.3715,
+ "n_neighbors": 3,
+ "n_shells": 3,
+ "cutoff": 2.964,
+ "d0": 1.4318286675888652,
+ "shells": [
+  1.432,
+  2.48,
+  2.864,
+  3.35,
+  3.643,
+  3.788
+ ],
+ "pair_shells": {
+  "B-B": [
+   2.48
+  ],
+  "B-N": [
+   1.4318,
+   2.8637
+  ],
+  "C-C": [
+   1.4318,
+   2.48,
+   2.8637
+  ],
+  "N-N": [
+   2.48
+  ]
+ },
+ "n_pairs": 48,
+ "n_bonds": 24,
+ "hopping_keys": [
+  "v_B_pz-B_pz_ppp",
+  "v_B_pz-N_pz_ppp",
+  "v_C_pz-C_pz_ppp",
+  "v_N_pz-N_pz_ppp"
+ ],
+ "sites": [
+  {
+   "label": "B1",
+   "eq": 0,
+   "shells": [
+    [
+     1,
+     1.432,
+     3,
+     {
+      "N": 3
+     }
+    ],
+    [
+     2,
+     2.48,
+     6,
+     {
+      "B": 6
+     }
+    ],
+    [
+     3,
+     2.864,
+     3,
+     {
+      "N": 3
+     }
+    ]
+   ]
+  },
+  {
+   "label": "N1",
+   "eq": 1,
+   "shells": [
+    [
+     1,
+     1.432,
+     3,
+     {
+      "B": 3
+     }
+    ],
+    [
+     2,
+     2.48,
+     6,
+     {
+      "N": 6
+     }
+    ],
+    [
+     3,
+     2.864,
+     3,
+     {
+      "B": 3
+     }
+    ]
+   ]
+  },
+  {
+   "label": "C1",
+   "eq": 2,
+   "shells": [
+    [
+     1,
+     1.432,
+     3,
+     {
+      "C": 3
+     }
+    ],
+    [
+     2,
+     2.48,
+     6,
+     {
+      "C": 6
+     }
+    ],
+    [
+     3,
+     2.864,
+     3,
+     {
+      "C": 3
+     }
+    ]
+   ]
+  },
+  {
+   "label": "C2",
+   "eq": 3,
+   "shells": [
+    [
+     1,
+     1.432,
+     3,
+     {
+      "C": 3
+     }
+    ],
+    [
+     2,
+     2.48,
+     6,
+     {
+      "C": 6
+     }
+    ],
+    [
+     3,
+     2.864,
+     3,
+     {
+      "C": 3
+     }
+    ]
+   ]
+  }
+ ],
+ "warnings": 0
+}

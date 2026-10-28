@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.venv/
+venv/
+# outputs of the examples
+examples/*/out/
+examples/*/out_character/
+examples/*/out_suggest/
+paper/figures/*.png
+paper/figures/*.pdf
+paper/figures/*.md
+paper/figures/*.tex

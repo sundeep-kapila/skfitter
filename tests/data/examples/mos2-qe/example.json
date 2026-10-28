@@ -1,0 +1,45 @@
+{
+ "id": "mos2-qe",
+ "name": "2H-MoS2 (QE, SOC)",
+ "code": "espresso",
+ "files": {
+  "qe_xml": "qe_bands.xml",
+  "qe_bands_in": "qe_bands.in",
+  "qe_scf": "qe_scf.out",
+  "qe_projwfc": "qe_projwfc_up"
+ },
+ "seed": "mos2_qe",
+ "cfg": {
+  "symprec": 0.001,
+  "fit_eta": false,
+  "fixed_eta": 2.5,
+  "non_orthogonal": false,
+  "model_states_only": false,
+  "tb_nelect": 28,
+  "orbital_config": {
+   "Mo": [
+    "dz2",
+    "d_e2",
+    "d_e1"
+   ],
+   "S": [
+    "pxy",
+    "pz"
+   ]
+  },
+  "magnetic_orbitals": {},
+  "n_bands_below": 4,
+  "n_bands_above": 2,
+  "n_neighbors": 7,
+  "include_soc": true,
+  "hopping_mode": "shell"
+ },
+ "opts": {
+  "method": "ls",
+  "n_starts": 2,
+  "refine_max_nfev": 300,
+  "seed": 0
+ },
+ "start_set": "harrison",
+ "data": "examples/mos2/data"
+}

@@ -1,0 +1,152 @@
+{
+ "about": "skfitter_structure reference, see tests/make_structure_baselines.py",
+ "formula": "CeO2",
+ "spacegroup": {
+  "symbol": "Fm-3m",
+  "number": 225,
+  "crystal_system": "cubic"
+ },
+ "n_sites": 3,
+ "n_inequivalent": 2,
+ "dimensionality": "3D",
+ "abc": [
+  3.82604,
+  3.82604,
+  3.82604
+ ],
+ "angles": [
+  60.0,
+  60.0,
+  60.0
+ ],
+ "volume": 39.6035,
+ "n_neighbors": 3,
+ "n_shells": 3,
+ "cutoff": 3.926,
+ "d0": 2.3429611408503694,
+ "shells": [
+  2.343,
+  2.705,
+  3.826,
+  4.486,
+  4.686,
+  5.411
+ ],
+ "pair_shells": {
+  "Ce-Ce": [
+   3.826
+  ],
+  "Ce-O": [
+   2.343
+  ],
+  "O-O": [
+   2.7054,
+   3.826
+  ]
+ },
+ "n_pairs": 64,
+ "n_bonds": 32,
+ "hopping_keys": [
+  "v_Ce_d-Ce_d_ddd",
+  "v_Ce_d-Ce_d_ddp",
+  "v_Ce_d-Ce_d_dds",
+  "v_Ce_d-Ce_f_dfd",
+  "v_Ce_d-Ce_f_dfp",
+  "v_Ce_d-Ce_f_dfs",
+  "v_Ce_f-Ce_f_ffd",
+  "v_Ce_f-Ce_f_fff",
+  "v_Ce_f-Ce_f_ffp",
+  "v_Ce_f-Ce_f_ffs",
+  "v_O_p-Ce_d_pdp",
+  "v_O_p-Ce_d_pds",
+  "v_O_p-Ce_f_pfp",
+  "v_O_p-Ce_f_pfs",
+  "v_O_p-O_p_ppp",
+  "v_O_p-O_p_pps"
+ ],
+ "sites": [
+  {
+   "label": "Ce1",
+   "eq": 0,
+   "shells": [
+    [
+     1,
+     2.343,
+     8,
+     {
+      "O": 8
+     }
+    ],
+    [
+     3,
+     3.826,
+     12,
+     {
+      "Ce": 12
+     }
+    ]
+   ]
+  },
+  {
+   "label": "O1",
+   "eq": 1,
+   "shells": [
+    [
+     1,
+     2.343,
+     4,
+     {
+      "Ce": 4
+     }
+    ],
+    [
+     2,
+     2.705,
+     6,
+     {
+      "O": 6
+     }
+    ],
+    [
+     3,
+     3.826,
+     12,
+     {
+      "O": 12
+     }
+    ]
+   ]
+  },
+  {
+   "label": "O2",
+   "eq": 1,
+   "shells": [
+    [
+     1,
+     2.343,
+     4,
+     {
+      "Ce": 4
+     }
+    ],
+    [
+     2,
+     2.705,
+     6,
+     {
+      "O": 6
+     }
+    ],
+    [
+     3,
+     3.826,
+     12,
+     {
+      "O": 12
+     }
+    ]
+   ]
+  }
+ ],
+ "warnings": 1
+}

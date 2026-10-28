@@ -1,0 +1,295 @@
+{
+ "id": "iron-soc-qe",
+ "name": "Iron-SOC-QE",
+ "material": "Iron (Fe) - BCC, ferromagnetic",
+ "code": "espresso",
+ "files": {
+  "qe_xml": "qe_bands.xml",
+  "qe_bands_in": "qe_bands.in",
+  "qe_scf": "qe_scf.out",
+  "qe_projwfc": "qe_projwfc_up"
+ },
+ "seed": "fe_qe",
+ "cfg": {
+  "orbital_config": {
+   "Fe": [
+    "s",
+    "p",
+    "d"
+   ]
+  },
+  "magnetic_orbitals": {
+   "Fe": [
+    "s",
+    "d"
+   ]
+  },
+  "n_bands_below": 4,
+  "n_bands_above": 1,
+  "n_neighbors": 4,
+  "symprec": 0.001,
+  "fit_eta": true,
+  "fixed_eta": 2.5,
+  "hopping_mode": "shell",
+  "include_soc": true,
+  "non_orthogonal": false,
+  "model_states_only": false,
+  "tb_nelect": null
+ },
+ "opts": {
+  "method": "ls",
+  "n_starts": 8,
+  "maxiter": 200,
+  "popsize": 15,
+  "k_stride": 1,
+  "refine": true,
+  "refine_max_nfev": 300,
+  "seed": 0,
+  "add_weight_at_symmetry_points": false,
+  "symmetry_weight": 10,
+  "symmetry_width": 2,
+  "add_weight_at_fermi_bands": true,
+  "fermi_weight": 30,
+  "fermi_window": 1
+ },
+ "start_set": "harrison",
+ "overrides": {
+  "e_orbit0_Fe_s": [
+   1.54198,
+   -10,
+   15
+  ],
+  "e_orbit0_Fe_p": [
+   3.15734,
+   -10,
+   15
+  ],
+  "e_orbit0_Fe_d": [
+   -0.589708,
+   -10,
+   15
+  ],
+  "lambda_Fe_d": [
+   0.057,
+   0.0569,
+   0.0571
+  ],
+  "lambda_Fe_p": [
+   0,
+   0,
+   0.0001
+  ],
+  "delta_spin_Fe_d": [
+   2.47694,
+   -5,
+   5
+  ],
+  "delta_spin_Fe_s": [
+   -0.18258,
+   -5,
+   5
+  ],
+  "v_ddd_0": [
+   -0.0443634,
+   -2,
+   2
+  ],
+  "v_ddp_0": [
+   0.373895,
+   -2,
+   8
+  ],
+  "v_dds_0": [
+   -0.707827,
+   -10,
+   2
+  ],
+  "v_pdp_0": [
+   0.284869,
+   -2,
+   8
+  ],
+  "v_pds_0": [
+   -0.591893,
+   -10,
+   2
+  ],
+  "v_ppp_0": [
+   0.168277,
+   -8,
+   8
+  ],
+  "v_pps_0": [
+   0.704627,
+   -2,
+   8
+  ],
+  "v_sds_0": [
+   -0.66254,
+   -10,
+   2
+  ],
+  "v_sps_0": [
+   1.09383,
+   -8,
+   8
+  ],
+  "v_sss_0": [
+   -1.03433,
+   -10,
+   2
+  ],
+  "v_ddd_1": [
+   -0.0145578,
+   -2,
+   2
+  ],
+  "v_ddp_1": [
+   0.154717,
+   -2,
+   8
+  ],
+  "v_dds_1": [
+   -0.349394,
+   -10,
+   2
+  ],
+  "v_pdp_1": [
+   0.136361,
+   -2,
+   8
+  ],
+  "v_pds_1": [
+   -0.605954,
+   -10,
+   2
+  ],
+  "v_ppp_1": [
+   0.513254,
+   -8,
+   8
+  ],
+  "v_pps_1": [
+   0.63534,
+   -2,
+   8
+  ],
+  "v_sds_1": [
+   -0.407481,
+   -10,
+   2
+  ],
+  "v_sps_1": [
+   0.28567,
+   -8,
+   8
+  ],
+  "v_sss_1": [
+   -0.381566,
+   -10,
+   2
+  ],
+  "v_ddd_2": [
+   0.0108054,
+   -2,
+   2
+  ],
+  "v_ddp_2": [
+   -0.0234121,
+   -2,
+   8
+  ],
+  "v_dds_2": [
+   -0.00608105,
+   -10,
+   2
+  ],
+  "v_pdp_2": [
+   -0.0737842,
+   -2,
+   8
+  ],
+  "v_pds_2": [
+   -0.0620562,
+   -10,
+   2
+  ],
+  "v_ppp_2": [
+   0.167368,
+   -8,
+   8
+  ],
+  "v_pps_2": [
+   0.142603,
+   -2,
+   8
+  ],
+  "v_sds_2": [
+   0.0348363,
+   -10,
+   2
+  ],
+  "v_sps_2": [
+   0.0232693,
+   -8,
+   8
+  ],
+  "v_sss_2": [
+   -0.0141525,
+   -10,
+   2
+  ],
+  "v_ddd_3": [
+   -0.00120803,
+   -2,
+   2
+  ],
+  "v_ddp_3": [
+   -0.00109522,
+   -2,
+   8
+  ],
+  "v_dds_3": [
+   0.0116918,
+   -10,
+   2
+  ],
+  "v_pdp_3": [
+   -0.00432442,
+   -2,
+   8
+  ],
+  "v_pds_3": [
+   -0.0369502,
+   -10,
+   2
+  ],
+  "v_ppp_3": [
+   0.037357,
+   -8,
+   8
+  ],
+  "v_pps_3": [
+   0.2452,
+   -2,
+   8
+  ],
+  "v_sds_3": [
+   -0.00253237,
+   -10,
+   2
+  ],
+  "v_sps_3": [
+   0.019635,
+   -8,
+   8
+  ],
+  "v_sss_3": [
+   0.0346997,
+   -10,
+   2
+  ]
+ },
+ "order": 6.5,
+ "data": "examples/iron/data"
+}

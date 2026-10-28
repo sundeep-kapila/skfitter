@@ -1,0 +1,48 @@
+{
+ "id": "mnte-qe",
+ "name": "MnTe (QE, altermagnet)",
+ "code": "espresso",
+ "files": {
+  "qe_xml": "qe_bands.xml",
+  "qe_bands_in": "qe_bands.in",
+  "qe_scf": "qe_scf.out",
+  "qe_projwfc": "qe_projwfc_up",
+  "qe_projwfc_down": "qe_projwfc_down"
+ },
+ "seed": "mnte_qe",
+ "cfg": {
+  "symprec": 0.001,
+  "fit_eta": false,
+  "fixed_eta": 2.5,
+  "non_orthogonal": false,
+  "model_states_only": false,
+  "tb_nelect": null,
+  "orbital_config": {
+   "Mn": [
+    "s",
+    "d"
+   ],
+   "Te": [
+    "p"
+   ]
+  },
+  "magnetic_orbitals": {
+   "Mn": [
+    "d"
+   ]
+  },
+  "n_bands_below": 22,
+  "n_bands_above": 8,
+  "n_neighbors": 3,
+  "include_soc": false,
+  "hopping_mode": "shell"
+ },
+ "opts": {
+  "method": "ls",
+  "n_starts": 2,
+  "refine_max_nfev": 300,
+  "seed": 0
+ },
+ "start_set": "harrison",
+ "data": "examples/mnte/data"
+}

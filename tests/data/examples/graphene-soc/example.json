@@ -1,0 +1,47 @@
+{
+ "id": "graphene-soc",
+ "name": "Graphene-Spin-Orbit",
+ "material": "Graphene (C) - 2D honeycomb",
+ "code": "espresso",
+ "files": {
+  "qe_xml": "qe_bands.xml",
+  "qe_bands_in": "qe_bands.in",
+  "qe_scf": "qe_scf.out",
+  "qe_projwfc": "qe_projwfc_up"
+ },
+ "seed": "graphene_soc",
+ "cfg": {
+  "orbital_config": {
+   "C": [
+    "s",
+    "p"
+   ]
+  },
+  "magnetic_orbitals": {},
+  "n_bands_below": 4,
+  "n_bands_above": 1,
+  "n_neighbors": 3,
+  "symprec": 0.001,
+  "fit_eta": true,
+  "fixed_eta": 2.5,
+  "include_soc": true,
+  "non_orthogonal": true,
+  "model_states_only": false,
+  "tb_nelect": null
+ },
+ "opts": {
+  "method": "ls",
+  "n_starts": 8,
+  "refine_max_nfev": 300,
+  "seed": 0
+ },
+ "start_set": "harrison",
+ "overrides": {
+  "lambda_C_p": [
+   0.0077,
+   0.00769,
+   0.00771
+  ]
+ },
+ "order": 2
+}

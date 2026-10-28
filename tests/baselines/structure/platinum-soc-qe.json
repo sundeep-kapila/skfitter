@@ -1,0 +1,99 @@
+{
+ "about": "skfitter_structure reference, see tests/make_structure_baselines.py",
+ "formula": "Pt",
+ "spacegroup": {
+  "symbol": "Fm-3m",
+  "number": 225,
+  "crystal_system": "cubic"
+ },
+ "n_sites": 1,
+ "n_inequivalent": 1,
+ "dimensionality": "3D",
+ "abc": [
+  2.78823,
+  2.78823,
+  2.78823
+ ],
+ "angles": [
+  60.0,
+  60.0,
+  60.0
+ ],
+ "volume": 15.3274,
+ "n_neighbors": 4,
+ "n_shells": 4,
+ "cutoff": 5.676,
+ "d0": 2.788228104235735,
+ "shells": [
+  2.788,
+  3.943,
+  4.829,
+  5.576,
+  6.235,
+  6.83,
+  7.377
+ ],
+ "pair_shells": {
+  "Pt-Pt": [
+   2.7882,
+   3.9431,
+   4.8294,
+   5.5765
+  ]
+ },
+ "n_pairs": 54,
+ "n_bonds": 27,
+ "hopping_keys": [
+  "v_Pt_d-Pt_d_ddd",
+  "v_Pt_d-Pt_d_ddp",
+  "v_Pt_d-Pt_d_dds",
+  "v_Pt_p-Pt_d_pdp",
+  "v_Pt_p-Pt_d_pds",
+  "v_Pt_p-Pt_p_ppp",
+  "v_Pt_p-Pt_p_pps",
+  "v_Pt_s-Pt_d_sds",
+  "v_Pt_s-Pt_p_sps",
+  "v_Pt_s-Pt_s_sss"
+ ],
+ "sites": [
+  {
+   "label": "Pt1",
+   "eq": 0,
+   "shells": [
+    [
+     1,
+     2.788,
+     12,
+     {
+      "Pt": 12
+     }
+    ],
+    [
+     2,
+     3.943,
+     6,
+     {
+      "Pt": 6
+     }
+    ],
+    [
+     3,
+     4.829,
+     24,
+     {
+      "Pt": 24
+     }
+    ],
+    [
+     4,
+     5.576,
+     12,
+     {
+      "Pt": 12
+     }
+    ]
+   ]
+  }
+ ],
+ "warnings": 0
+}

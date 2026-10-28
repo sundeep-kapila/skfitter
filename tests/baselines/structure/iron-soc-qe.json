@@ -1,0 +1,99 @@
+{
+ "about": "skfitter_structure reference, see tests/make_structure_baselines.py",
+ "formula": "Fe",
+ "spacegroup": {
+  "symbol": "Im-3m",
+  "number": 229,
+  "crystal_system": "cubic"
+ },
+ "n_sites": 1,
+ "n_inequivalent": 1,
+ "dimensionality": "3D",
+ "abc": [
+  2.45951,
+  2.45951,
+  2.45951
+ ],
+ "angles": [
+  109.4712,
+  109.4712,
+  109.4712
+ ],
+ "volume": 11.4532,
+ "n_neighbors": 4,
+ "n_shells": 4,
+ "cutoff": 4.81,
+ "d0": 2.459512146747806,
+ "shells": [
+  2.46,
+  2.84,
+  4.016,
+  4.71,
+  4.919,
+  5.68,
+  6.19
+ ],
+ "pair_shells": {
+  "Fe-Fe": [
+   2.4595,
+   2.84,
+   4.0164,
+   4.7096
+  ]
+ },
+ "n_pairs": 50,
+ "n_bonds": 25,
+ "hopping_keys": [
+  "v_Fe_d-Fe_d_ddd",
+  "v_Fe_d-Fe_d_ddp",
+  "v_Fe_d-Fe_d_dds",
+  "v_Fe_p-Fe_d_pdp",
+  "v_Fe_p-Fe_d_pds",
+  "v_Fe_p-Fe_p_ppp",
+  "v_Fe_p-Fe_p_pps",
+  "v_Fe_s-Fe_d_sds",
+  "v_Fe_s-Fe_p_sps",
+  "v_Fe_s-Fe_s_sss"
+ ],
+ "sites": [
+  {
+   "label": "Fe1",
+   "eq": 0,
+   "shells": [
+    [
+     1,
+     2.46,
+     8,
+     {
+      "Fe": 8
+     }
+    ],
+    [
+     2,
+     2.84,
+     6,
+     {
+      "Fe": 6
+     }
+    ],
+    [
+     3,
+     4.016,
+     12,
+     {
+      "Fe": 12
+     }
+    ],
+    [
+     4,
+     4.71,
+     24,
+     {
+      "Fe": 24
+     }
+    ]
+   ]
+  }
+ ],
+ "warnings": 0
+}

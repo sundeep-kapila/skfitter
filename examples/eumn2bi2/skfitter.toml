@@ -1,0 +1,51 @@
+# EuMn2Bi2, Eu s d f, Mn s d (A1, E1, E2), Bi s pz / pxy, antiferromagnetic, spin-orbit coupling on Bi 6p
+# The symmetry-split model + the four orbitals skfitter character --suggest ranks (Eu 5d, Mn 4s, Eu 6s, Bi 6s)
+# The model of the SKFitter paper (Table 1). The fit starts from the published parameters
+# (reference/); skfitter fit gives the RMSE of the paper. See README.md for a fit from scratch.
+
+name = "eumn2bi2"
+output = "out"
+
+[dft]
+code = "espresso"
+xml = "data/qe_bands.xml.gz"
+bands_in = "data/qe_bands.in"
+scf = "data/qe_scf.out"
+
+[model]
+orbitals = { Eu = ["d", "f", "s"], Mn = ["s", "dz2", "d_e1", "d_e2"], Bi = ["s", "pz", "pxy"] }
+magnetic_orbitals = { Eu = ["f"], Mn = ["dz2", "d_e1", "d_e2"] }
+bands_below = 29
+bands_above = 10
+neighbours = 13
+hopping = "shell"
+soc = true
+soc_orbitals = { Bi = ["p"] }
+overlap = false
+electrons = 66
+fit_eta = false
+eta = 2.5
+
+[fit]
+method = "ls"
+starts = 2
+seed = 0
+refine_max_nfev = 300
+fermi_weight = 10
+fermi_window = 1.5
+start_from = "reference/eumn2bi2_fit.json"
+
+[fit.fix]
+lambda_Bi_p = 1.251
+
+# exchange splitting of Mn 3d: >= 3 eV (the default bound, +-5 eV, is below its value of about 7 eV)
+# exchange splitting of Eu 4f: >= 8 eV (lower values pull the empty 4f states into the conduction band,
+# where DFT has none)
+[fit.bounds]
+delta_spin_Eu_f = [8, 12]
+delta_spin_Mn_dz2 = [3, 12]
+delta_spin_Mn_d_e1 = [3, 12]
+delta_spin_Mn_d_e2 = [3, 12]
+# Mn 4s above the Fermi level
+e_orbit2_Mn_s = [0, 8]
+e_orbit3_Mn_s = [0, 8]

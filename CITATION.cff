@@ -1,0 +1,39 @@
+cff-version: 1.2.0
+message: "If you use SKFitter, please cite the paper below."
+title: "SKFitter"
+abstract: "Symmetry-resolved Slater-Koster tight-binding models fitted to DFT band structures, and their Berry-phase properties."
+type: software
+version: 1.0.0rc5
+doi: 10.5281/zenodo.23719846
+license: AGPL-3.0-only
+repository-code: "https://github.com/sundeep-kapila/skfitter"
+authors:
+  - family-names: Kapila
+    given-names: Sundeep
+    email: sundeep.kapila@swasth.org
+    affiliation: "Indian Institute of Technology Bombay"
+  - family-names: Muralidharan
+    given-names: Bhaskaran
+    affiliation: "Indian Institute of Technology Bombay"
+  - family-names: Bhattacharjee
+    given-names: Satadeep
+    affiliation: "Indo-Korea Science and Technology Center"
+keywords:
+  - tight binding
+  - Slater-Koster
+  - density functional theory
+  - spin-orbit coupling
+  - magnetism
+  - Berry curvature
+preferred-citation:
+  type: article
+  title: "SKFitter: symmetry-resolved Slater-Koster tight-binding models from first principles for s, p, d and f electrons, spin-orbit coupling and magnetism"
+  authors:
+    - family-names: Kapila
+      given-names: Sundeep
+    - family-names: Muralidharan
+      given-names: Bhaskaran
+    - family-names: Bhattacharjee
+      given-names: Satadeep
+  year: 2026
+  status: in-preparation

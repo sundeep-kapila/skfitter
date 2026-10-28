@@ -1,0 +1,58 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "skfitter"
+dynamic = ["version"]
+description = "Symmetry-resolved Slater-Koster tight-binding models fitted to DFT band structures, with Berry-phase properties"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "AGPL-3.0-only"
+license-files = ["LICENSE"]
+authors = [
+    { name = "Sundeep Kapila", email = "sundeep.kapila@swasth.org" },
+    { name = "Bhaskaran Muralidharan" },
+    { name = "Satadeep Bhattacharjee" },
+]
+keywords = ["tight binding", "Slater-Koster", "DFT", "Quantum ESPRESSO", "VASP", "spin-orbit coupling",
+            "magnetism", "Berry curvature", "anomalous Hall", "spin Hall"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Physics",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "numpy>=1.21",
+    "scipy>=1.8",
+    "matplotlib>=3.5",
+    "pymatgen>=2023.1.1",
+    "tomli>=1.1; python_version < '3.11'",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[project.scripts]
+skfitter = "skfitter.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/sundeep-kapila/skfitter"
+Issues = "https://github.com/sundeep-kapila/skfitter/issues"
+
+[tool.setuptools.dynamic]
+version = { attr = "skfitter.__version__" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"skfitter.data" = ["param_sets/*", "param_sets/**/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+filterwarnings = [
+    "ignore:Set OLD_ERROR_HANDLING:DeprecationWarning",          # spglib
+    "ignore:FigureCanvasAgg is non-interactive:UserWarning",
+]

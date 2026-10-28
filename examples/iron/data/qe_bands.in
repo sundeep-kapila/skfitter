@@ -1,0 +1,45 @@
+&CONTROL
+  calculation = 'bands'
+  prefix = 'fe_soc'
+  outdir = './qe_scratch'
+  pseudo_dir = './qe_pseudo'
+  verbosity = 'high'
+/
+&SYSTEM
+  ibrav = 0
+  nat = 1
+  ntyp = 1
+  noncolin = .true.
+  lspinorb = .true.
+  starting_magnetization(1) = 0.5
+  angle1(1) = 0.0
+  angle2(1) = 0.0
+  ecutwfc = 100
+  ecutrho = 400
+  nbnd = 32
+  occupations = 'smearing'
+  smearing = 'mv'
+  degauss = 0.01
+/
+&ELECTRONS
+  conv_thr = 1.0d-9
+  mixing_beta = 0.3
+/
+ATOMIC_SPECIES
+  Fe 55.845 Fe.dojo04-pbe-fr.upf
+CELL_PARAMETERS angstrom
+  -1.420000000000 1.420000000000 1.420000000000
+  1.420000000000 -1.420000000000 1.420000000000
+  1.420000000000 1.420000000000 -1.420000000000
+ATOMIC_POSITIONS crystal
+  Fe 0.000000000000 0.000000000000 0.000000000000
+K_POINTS crystal_b
+8
+  0.000000000000 0.000000000000 0.000000000000 20 ! G
+  0.500000000000 -0.500000000000 0.500000000000 20 ! H
+  0.000000000000 0.000000000000 0.500000000000 20 ! N
+  0.000000000000 0.000000000000 0.000000000000 20 ! G
+  0.250000000000 0.250000000000 0.250000000000 20 ! P
+  0.500000000000 -0.500000000000 0.500000000000 1 ! H
+  0.250000000000 0.250000000000 0.250000000000 20 ! P
+  0.000000000000 0.000000000000 0.500000000000 1 ! N

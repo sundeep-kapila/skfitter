@@ -1,0 +1,31 @@
+# gamma-Ce, s d (t2g, eg) f (a2u, t1u, t2u): per shell, whole orbital families
+# skfitter fit steps/shell.toml (from the example folder)
+
+name = "cerium_shell"
+output = "../out"
+
+[dft]
+code = "espresso"
+xml = "../data/qe_bands.xml"
+bands_in = "../data/qe_bands.in"
+scf = "../data/qe_scf.out"
+projwfc = "../data/qe_projwfc_up.gz"
+
+[model]
+orbitals = { Ce = ["s", "d", "f"] }
+bands_below = 2
+bands_above = 8
+neighbours = 3
+hopping = "shell"
+soc = false
+overlap = false
+fit_eta = true
+
+[fit]
+method = "ls"
+starts = 8
+seed = 0
+refine_max_nfev = 300
+fermi_weight = 30
+fermi_window = 1
+start_from = "../out/cerium_decay_fit.json"

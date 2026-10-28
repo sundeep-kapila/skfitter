@@ -1,0 +1,43 @@
+&CONTROL
+  calculation = 'bands'
+  prefix = 'ceo2'
+  outdir = './tmp'
+  pseudo_dir = '/home/sundeep/qe/pseudo'
+  verbosity = 'high'
+/
+&SYSTEM
+  ibrav = 2
+  celldm(1) = 10.225
+  nat = 3
+  ntyp = 2
+  ecutwfc = 50
+  ecutrho = 400
+  nbnd = 34
+  occupations = 'smearing'
+  smearing = 'gaussian'
+  degauss = 0.005
+
+/
+&ELECTRONS
+  conv_thr = 1.0d-9
+  mixing_beta = 0.3
+/
+ATOMIC_SPECIES
+  Ce 140.116 Ce.paw.pbe.z_12.atompaw.wentzcovitch.v1.0.legacy.upf
+  O   15.999 O.paw.pbe.z_6.ld1.psl.v0.1.upf
+ATOMIC_POSITIONS alat
+  Ce  0.00  0.00  0.00
+  O   0.25  0.25  0.25
+  O  -0.25 -0.25 -0.25
+K_POINTS tpiba_b
+10
+  0.000 0.000 0.000 30 ! G
+  1.000 0.000 0.000 15 ! X
+  1.000 0.500 0.000 10 ! W
+  0.750 0.750 0.000 30 ! K
+  0.000 0.000 0.000 25 ! G
+  0.500 0.500 0.500 20 ! L
+  1.000 0.250 0.250 10 ! U
+  1.000 0.500 0.000 20 ! W
+  0.500 0.500 0.500 20 ! L
+  0.750 0.750 0.000  1 ! K

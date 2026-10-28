@@ -1,0 +1,75 @@
+&CONTROL
+  calculation = 'bands'
+  prefix = 'eumn2bi2_for_paper'
+  outdir = './qe_scratch'
+  pseudo_dir = './qe_pseudo'
+  verbosity = 'high'
+/
+&SYSTEM
+  ibrav = 0
+  nat = 10
+  ntyp = 5
+  noncolin = .true.
+  lspinorb = .true.
+  starting_magnetization(1) = 0.8
+  angle1(1) = 0.0
+  angle2(1) = 0.0
+  starting_magnetization(2) = 0.8
+  angle1(2) = 180.0
+  angle2(2) = 0.0
+  starting_magnetization(3) = 0.6
+  angle1(3) = 0.0
+  angle2(3) = 0.0
+  starting_magnetization(4) = 0.6
+  angle1(4) = 180.0
+  angle2(4) = 0.0
+  ecutwfc = 85
+  ecutrho = 480
+  nbnd = 200
+  occupations = 'smearing'
+  smearing = 'mv'
+  degauss = 0.02
+/
+&ELECTRONS
+  conv_thr = 1.0d-5
+  mixing_beta = 0.2
+  mixing_mode = 'local-TF'
+  mixing_ndim = 12
+  electron_maxstep = 200
+/
+ATOMIC_SPECIES
+  Eu1 151.96 Eu.paw.z_17.atompaw.wentzcovitch.v1.2.upf
+  Eu2 151.96 Eu.paw.z_17.atompaw.wentzcovitch.v1.2.upf
+  Mn1 54.938 Mn.dojo04-pbe-fr.upf
+  Mn2 54.938 Mn.dojo04-pbe-fr.upf
+  Bi 208.98 Bi.dojo04-pbe-fr.upf
+CELL_PARAMETERS angstrom
+  4.802162500000 0.000000000000 0.000000000000
+  -2.401081250000 4.158794718101 0.000000000000
+  0.000000000000 0.000000000000 15.837367090000
+ATOMIC_POSITIONS crystal
+  Eu1 0.000000000000 0.000000000000 0.999758620000
+  Eu2 0.000000000000 0.000000000000 0.500241310000
+  Mn1 0.666666666667 0.333333333333 0.189527130000
+  Mn1 0.666666666667 0.333333333333 0.689739000000
+  Mn2 0.333333333333 0.666666666667 0.310472650000
+  Mn2 0.333333333333 0.666666666667 0.810261350000
+  Bi 0.666666666667 0.333333333333 0.374253040000
+  Bi 0.666666666667 0.333333333333 0.874249880000
+  Bi 0.333333333333 0.666666666667 0.125746780000
+  Bi 0.333333333333 0.666666666667 0.625750090000
+HUBBARD {ortho-atomic}
+  U Eu1-4f 6.32
+  U Eu2-4f 6.32
+  U Mn1-3d 4.16
+  U Mn2-3d 4.16
+K_POINTS crystal_b
+8
+  0.000000000000 0.000000000000 0.000000000000 20 ! G
+  0.500000000000 0.000000000000 0.000000000000 20 ! M
+  0.333333333333 0.333333333333 0.000000000000 20 ! K
+  0.000000000000 0.000000000000 0.000000000000 20 ! G
+  0.000000000000 0.000000000000 0.500000000000 20 ! A
+  0.500000000000 0.000000000000 0.500000000000 20 ! L
+  0.333333333333 0.333333333333 0.500000000000 20 ! H
+  0.000000000000 0.000000000000 0.500000000000 1 ! A

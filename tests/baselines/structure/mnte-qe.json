@@ -1,0 +1,185 @@
+{
+ "about": "skfitter_structure reference, see tests/make_structure_baselines.py",
+ "formula": "MnTe",
+ "spacegroup": {
+  "symbol": "P6_3/mmc",
+  "number": 194,
+  "crystal_system": "hexagonal"
+ },
+ "n_sites": 4,
+ "n_inequivalent": 2,
+ "dimensionality": "3D",
+ "abc": [
+  4.21774,
+  4.21772,
+  6.76303
+ ],
+ "angles": [
+  90.0,
+  90.0,
+  120.0001
+ ],
+ "volume": 104.1906,
+ "n_neighbors": 3,
+ "n_shells": 3,
+ "cutoff": 4.267,
+ "d0": 2.964516936803001,
+ "shells": [
+  2.965,
+  3.382,
+  4.167,
+  4.218,
+  5.155,
+  5.406
+ ],
+ "pair_shells": {
+  "Mn-Mn": [
+   3.3815,
+   4.2177
+  ],
+  "Mn-Te": [
+   2.9645
+  ],
+  "Te-Te": [
+   4.1671,
+   4.2177
+  ]
+ },
+ "n_pairs": 64,
+ "n_bonds": 32,
+ "hopping_keys": [
+  "v_Mn_d-Mn_d_ddd",
+  "v_Mn_d-Mn_d_ddp",
+  "v_Mn_d-Mn_d_dds",
+  "v_Mn_s-Mn_d_sds",
+  "v_Mn_s-Mn_s_sss",
+  "v_Mn_s-Te_p_sps",
+  "v_Te_p-Mn_d_pdp",
+  "v_Te_p-Mn_d_pds",
+  "v_Te_p-Te_p_ppp",
+  "v_Te_p-Te_p_pps"
+ ],
+ "sites": [
+  {
+   "label": "Mn1",
+   "eq": 0,
+   "shells": [
+    [
+     1,
+     2.965,
+     6,
+     {
+      "Te": 6
+     }
+    ],
+    [
+     2,
+     3.382,
+     2,
+     {
+      "Mn": 2
+     }
+    ],
+    [
+     4,
+     4.218,
+     6,
+     {
+      "Mn": 6
+     }
+    ]
+   ]
+  },
+  {
+   "label": "Mn2",
+   "eq": 0,
+   "shells": [
+    [
+     1,
+     2.965,
+     6,
+     {
+      "Te": 6
+     }
+    ],
+    [
+     2,
+     3.382,
+     2,
+     {
+      "Mn": 2
+     }
+    ],
+    [
+     4,
+     4.218,
+     6,
+     {
+      "Mn": 6
+     }
+    ]
+   ]
+  },
+  {
+   "label": "Te1",
+   "eq": 2,
+   "shells": [
+    [
+     1,
+     2.965,
+     6,
+     {
+      "Mn": 6
+     }
+    ],
+    [
+     3,
+     4.167,
+     6,
+     {
+      "Te": 6
+     }
+    ],
+    [
+     4,
+     4.218,
+     6,
+     {
+      "Te": 6
+     }
+    ]
+   ]
+  },
+  {
+   "label": "Te2",
+   "eq": 2,
+   "shells": [
+    [
+     1,
+     2.965,
+     6,
+     {
+      "Mn": 6
+     }
+    ],
+    [
+     3,
+     4.167,
+     6,
+     {
+      "Te": 6
+     }
+    ],
+    [
+     4,
+     4.218,
+     6,
+     {
+      "Te": 6
+     }
+    ]
+   ]
+  }
+ ],
+ "warnings": 2
+}

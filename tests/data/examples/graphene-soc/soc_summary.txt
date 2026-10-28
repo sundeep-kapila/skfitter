@@ -1,0 +1,6 @@
+Fermi energy (SCF)                 : -2.3428 eV
+k-points on the path               : 113   (K is point 65)
+gap at K (bands 8 and 9)        : 0.9 micro-eV   (graphene: tens of micro-eV; the value depends on the pseudopotential)
+bands at K near E_F (eV)           : -2.352336  -2.352336  -2.352335  -2.352335
+occupied bands at Gamma (eV)       : -21.87215  -21.87215  -9.96682  -9.96682  -5.41203  -5.41203  -5.40281  -5.40281
+sigma (px, py) splitting at Gamma  : 9.22 meV   (the atomic SOC of carbon, about 9 meV)

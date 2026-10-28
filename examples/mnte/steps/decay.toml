@@ -1,0 +1,36 @@
+# MnTe altermagnet, Mn s d (A1, E1, E2) and Te pz / pxy: decay law, whole orbital families
+# skfitter fit steps/decay.toml (from the example folder)
+
+name = "mnte_decay"
+output = "../out"
+
+[dft]
+code = "espresso"
+xml = "../data/qe_bands.xml.gz"
+bands_in = "../data/qe_bands.in"
+scf = "../data/qe_scf.out"
+projwfc = "../data/qe_projwfc_up.gz"
+
+[model]
+orbitals = { Mn = ["s", "d"], Te = ["p"] }
+magnetic_orbitals = { Mn = ["d"] }
+bands_below = 22
+bands_above = 8
+neighbours = 5
+hopping = "decay"
+soc = false
+overlap = false
+fit_eta = true
+
+[fit]
+method = "ls"
+starts = 8
+seed = 0
+refine_max_nfev = 300
+fermi_weight = 10
+fermi_window = 1.5
+start_set = "harrison"
+
+# exchange splitting of Mn 3d: >= 3 eV (the default bound, +-5 eV, is below its value of about 7 eV)
+[fit.bounds]
+delta_spin_Mn_d = [3, 12]
